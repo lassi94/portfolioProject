@@ -2,7 +2,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #000;
         font-size: 32px;
         font-family: Raleway-Regular, Raleway;
         letter-spacing: 0.033em;
@@ -11,7 +11,7 @@
 
       .cls-2 {
         fill: none;
-        stroke: #fff;
+        stroke: #000;
       }
     </style>
   </defs>

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.title{
+    font-family: Raleway;
+    font-weight: bold;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+}
+
+#tag{
+    margin-top: 90px;
+    color: #707070;
+    font-family: Raleway;
+    opacity: 0.5;
+
+}
+
+.btn{
+    border: 1px solid #08FDD8;
+    background: transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    color: #08FDD8;
+    border-radius: 3px;
+    font-family: Raleway;
+}
+.btn2{
+    border: 1px solid #08FDD8;
+    background: transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    color: #08FDD8;
+    font-family: Raleway;
+    margin-left: 90px;
+    border-radius: 3px;
+}
+
+.btn-class{
+    margin-top: 67px;
+}

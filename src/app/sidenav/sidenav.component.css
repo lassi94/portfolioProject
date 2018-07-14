@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Raleway;
+}
+
+nav{
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: #4B4B4B;
+}
+
+nav ul li{
+    color: #fff;
+    list-style: none;
+    padding: 5px 10px;
+    
+}
+
+.open-slide{
+    position: relative;
+    margin-left: 80px;
+}
