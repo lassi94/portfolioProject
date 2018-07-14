@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostService } from './post.service';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    HomeComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

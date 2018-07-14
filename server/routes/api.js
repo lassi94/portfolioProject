@@ -8,7 +8,7 @@ const db = "mongodb://lasik:artek870@ds137661.mlab.com:37661/portfolio";
 mongoose.Promise = global.Promise;
 
 
-mongoose.connect(db, function(err){
+mongoose.connect(db, { useNewUrlParser: true }, function(err){
     if(err){
         console.log('Connection Error');
     }
