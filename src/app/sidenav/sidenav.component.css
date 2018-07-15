@@ -12,27 +12,67 @@
     height: 100%;
     background: transparent;
 }
-
-div ul li{
-    color: #fff;
-    list-style: none;
-    padding: 5px 10px;
-    
+nav{
+    padding-left: 360px;
+    overflow: hidden;
+    position: absolute;
+    transition: .3s ease-out;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
 }
 
-.open-slide{
-    position: relative;
-    margin-left: 80px;
+nav ul li{
+        float: left;
+        padding: 8px 0;
+        opacity: .5;
+        width: 100%;
+        transition: .3s ease;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.85em;
+        color: #fff;
+        list-style: none;
+        padding: 5px 10px;
 }
 
 #logo{
-    width: 50%;
-    height: 50%
+    width: 80%;
+    height: 80%;
+    margin: 15px 0 0 15px;
+    
 }
 
 .open-slide{
-    width: 25%;
-    height: 25%;
+    font-size: 7em;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+    -webkit-transform: rotate(0deg);
+    transition: .3s ease-out;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000001;
+    opacity: .5;
+    left: 0;
+    position: relative;
+    margin: 200px auto auto auto;
+    color: #707070;
     
+}
+
+.toggle.open-slide{
+        -webkit-transform: rotate(224deg); 
+        color: #fff;
+        left: -100px;
+}
+
+.open-slide:hover{
+    opacity: 1;
 }
 
