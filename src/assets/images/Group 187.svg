@@ -2,16 +2,17 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #000;
+        fill: #fff;
         font-size: 32px;
         font-family: Raleway-Regular, Raleway;
         letter-spacing: 0.033em;
-        opacity: 0.9;
+        opacity: 0.5;
       }
 
       .cls-2 {
         fill: none;
-        stroke: #000;
+        stroke: #fff;
+        opacity: 0.5;
       }
     </style>
   </defs>

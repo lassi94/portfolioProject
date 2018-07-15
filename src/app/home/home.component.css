@@ -2,12 +2,23 @@
 
 .title{
     font-family: Raleway;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 200px;
     color: #fff;
     font-size: 40px;
     font-style: normal;
+    -webkit-text-stroke-width: 3px;
+    
+    
 }
+
+#text{
+    color: #08FDD8;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#08FDD8;
+}
+    
+
 
 #tag{
     margin-top: 90px;
@@ -25,6 +36,8 @@
     color: #08FDD8;
     border-radius: 3px;
     font-family: Raleway;
+    font-size: 1.2em;
+    
 }
 .btn2{
     border: 1px solid #08FDD8;
@@ -33,10 +46,63 @@
     cursor: pointer;
     color: #08FDD8;
     font-family: Raleway;
-    margin-left: 90px;
+    margin-left: 80px;
     border-radius: 3px;
+    font-size: 1.2em;
+    
+    
 }
 
 .btn-class{
     margin-top: 67px;
 }
+
+.st0{stroke:#000000;stroke-miterlimit:10;}
+.st1{enable-background:new    ;}
+.st2{clip-path:url(#SVGID_2_);enable-background:new    ;}
+.st3{fill:#337C66;}
+.st4{fill:#317963;}
+.st5{fill:#2F7661;}
+.st6{fill:#357E68;}
+.st7{clip-path:url(#SVGID_4_);enable-background:new    ;}
+.st8{clip-path:url(#SVGID_6_);enable-background:new    ;}
+.st9{fill:#2E735F;}
+.st10{clip-path:url(#SVGID_8_);enable-background:new    ;}
+.st11{fill:#858585;}
+.st12{clip-path:url(#SVGID_10_);enable-background:new    ;}
+.st13{clip-path:url(#SVGID_12_);enable-background:new    ;}
+.st14{fill:#8F8F8F;}
+.st15{fill:#8A8A8A;}
+.st16{fill:#949494;}
+.st17{fill:#808080;}
+.st18{clip-path:url(#SVGID_14_);enable-background:new    ;}
+.st19{clip-path:url(#SVGID_16_);enable-background:new    ;}
+.st20{clip-path:url(#SVGID_18_);enable-background:new    ;}
+.st21{clip-path:url(#SVGID_20_);enable-background:new    ;}
+.st22{clip-path:url(#SVGID_22_);enable-background:new    ;}
+.st23{fill:#2E735E;}
+.st24{fill:#327964;}
+.st25{clip-path:url(#SVGID_24_);enable-background:new    ;}
+.st26{clip-path:url(#SVGID_26_);enable-background:new    ;}
+.st27{clip-path:url(#SVGID_28_);enable-background:new    ;}
+.st28{fill:#54B494;}
+.st29{fill:#F4F4F4;}
+.st30{clip-path:url(#SVGID_30_);enable-background:new    ;}
+.st31{clip-path:url(#SVGID_32_);enable-background:new    ;}
+.st32{fill:#888888;}
+.st33{fill:#EBEBEB;}
+.st34{fill:#8C8C8C;}
+
+.left-content{
+    grid-area: left;
+}
+
+.right-content{
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
