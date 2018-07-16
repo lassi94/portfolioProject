@@ -1,22 +1,40 @@
 
-<div class="container">
-  <div class="logo">
-    <a routerLink="/">
-        <img src="./assets/images/Group 183.svg" id="logo">
-    </a>
-  </div>
 
-  <div class="open-slide">
-     +
-  </div>
+<div class="container header">
+    <div class="logo">
+        <a routerLink="/">
+            <img src="./assets/images/Group 183.svg" id="logo">
+        </a>
+    </div>
+<mat-sidenav-container class="container" (backdropClick)="close('backdrop')">
+  
+    <mat-sidenav #sidenav mode="side">
+      <ul>
+        <a routerLink="/"><li>HOME</li></a>
+        <a routerLink="/"><li>ABOUT</li></a>
+        <a routerLink="/"><li>SKILLZ</li></a>
+        <a routerLink="/"><li>BLOG</li></a>
+        <a routerLink="/"><li>CONTACT</li></a>
+      </ul>
+    </mat-sidenav>
 
-  <nav type="navigation">
-    <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>SKILLZ</li>
-      <li>BLOG</li>
-      <li>CONTACT</li>
-    </ul>
-  </nav>
+    <mat-sidenav-content>
+      <button id="toggleButton" (click)="sidenav.toggle()"><span id="plus">+</span></button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
 </div>
+
+<!--
+<div class="open-slide">
+    +
+ </div>
+
+ 
+   <ul>
+     <li>HOME</li>
+     <li>ABOUT</li>
+     <li>SKILLZ</li>
+     <li>BLOG</li>
+     <li>CONTACT</li>
+   </ul>-->

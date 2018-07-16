@@ -8,24 +8,123 @@
     font-size: 40px;
     font-style: normal;
     -webkit-text-stroke-width: 3px;
-    
-    
 }
+
+#start{
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(40, end);
+     animation: type 5s steps(40, end);
+}
+
+#next{
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type2 5s steps(40, end);
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#text{
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type2 5s steps(40, end);
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#next2{
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type2 5s steps(40, end);
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#next3{
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type2 5s steps(40, end);
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+span{
+    animation: blink 1s infinite;
+  }
+
+@keyframes type2{
+    0%{width: 0;}
+    from {opacity:0;}
+    1%{opacity:1;}
+    to{opacity:1;}
+    100%{opacity:1;}
+    }
+    @-webkit-keyframes type2{
+    0%{width: 0;}
+    from {opacity:0;}
+    1%{opacity:1;}
+    to{opacity:1;}
+    100%{opacity:1;}
+    }  
+    @keyframes type3{
+      0%{width: 0;}
+      from {opacity:0;}
+    1%{opacity:1;}
+    to{opacity:1;}
+    100%{opacity:1;}
+    
+    } 
+    @-webkit-keyframes type3{
+      0%{width: 0;}
+      from {opacity:0;}
+    1%{opacity:1;}
+    to{opacity:1;}
+    100%{opacity:1;}
+    } 
 
 #text{
     color: #08FDD8;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color:#08FDD8;
+    text-shadow: 1px 1px #fff, 
+    2px 2px #fff, 
+    3px 3px #fff, 
+    4px 4px #ffff, 
+    5px 5px #fff, 
+    6px 6px #fff;
+    letter-spacing: 4px;
 }
-    
-
 
 #tag{
     margin-top: 70px;
     color: #707070;
     font-family: Raleway;
     opacity: 0.5;
-
 }
 
 .btn{
@@ -48,9 +147,7 @@
     font-family: Raleway;
     margin-left: 80px;
     border-radius: 3px;
-    font-size: 1.2em;
-    
-    
+    font-size: 1.2em;  
 }
 
 .btn-class{
@@ -96,13 +193,35 @@
 .left-content{
     grid-area: left;
 }
-
 .right-content{
     grid-area: right;
     display: grid;
     grid-template-columns: 100%;
-    justify-items: center;
-    align-items: center;
     height: 100%;
 }
+svg{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+svg #browser-logo{
+    animation-duration: 1.2s;
+    animation-name: animateLogo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateLogo{
+    from{
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(30px) translateY(-15px);
+        opacity: 1;
+    }
+}
+
 
