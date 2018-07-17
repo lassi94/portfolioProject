@@ -12,6 +12,7 @@ import { PostService } from './post.service';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BlogComponent } from './blog/blog.component';
     AppComponent,
     SidenavComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

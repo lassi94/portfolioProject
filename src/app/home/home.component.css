@@ -8,62 +8,246 @@
     font-size: 40px;
     font-style: normal;
     -webkit-text-stroke-width: 3px;
+    letter-spacing: 4px;
 }
 
-#start{
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 4s steps(40) 1s 1 normal both;
+.title #first:hover{
+    transition: .9s;
+    -webkit-animation: fontBounce 1s;
+    -moz-animation: fontBounce 1s;
+}
+.title #second:hover{
+    transition: .9s;
+    -webkit-animation: fontBounce 1s;
+    -moz-animation: fontBounce 1s;
+}
+.title #text:hover{
+    transition: .9s;
+    -webkit-animation: fontBounce 1s;
+    -moz-animation: fontBounce 1s;
+}
+.title #fourth:hover{
+    transition: .9s;
+    -webkit-animation: fontBounce 1s;
+    -moz-animation: fontBounce 1s;
+}
+.title #fifth:hover{
+    transition: .9s;
+    -webkit-animation: fontBounce 1s;
+    -moz-animation: fontBounce 1s;
 }
 
-#next{
+@-webkit-keyframes fontBounce{
+    0%{
+        font-size: 40px;
+    }
+    20%{
+        font-size: 44px;
+        letter-spacing: 6px;
+    }
+    60%{
+        font-size: 43px;
+        letter-spacing: -6px;
+    }
+    80%{
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+    100%{
+        font-size: 40px;
+    }
+}
+/*
+.title span:nth-child(2){
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(40) 1s 1 normal both;
+    opacity: 0;
+    -webkit-animation: typewriter2 4s steps(40, end);
+    animation: typewriter2 4s steps(40, end);
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-#text{
+.title span:nth-child(3){
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(40) 1s 1 normal both;
-    animation-delay: 3s;
+    opacity: 0;
+    -webkit-animation: typewriter3 6s steps(40, end);
+    animation: typewriter3 6s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-#next2{
+.title span:nth-child(4){
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(40) 1s 1 normal both;
-    animation-delay: 5s
+    opacity: 0;
+    -webkit-animation: typewriter4 8s steps(40, end);
+    animation: typewriter4 8s steps(40, end);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-#next3{
+.title span:nth-child(5){
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(80) 1s 1 normal both;
-    animation-delay: 7s
+    opacity: 0;
+    -webkit-animation: typewriter5 10s steps(40, end);
+    animation: typewriter5 10s steps(40, end);
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes typewriter{
-    from{
+    0%{
         width: 0;
     }
-    to{
-        width: 16em;
+    99.9%{
+        border-right: .15em solid white;
+    }
+    100%{
+        border: none
     }
 }
+
+@-webkit-keyframes typewriter{
+    0%{
+        width: 0;
+    }
+    99.9%{
+        border-right: .15em solid white;
+    }
+    100%{
+        border: none
+    }
+}
+
+@keyframes typewriter2{
+    0%{
+        width: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    99.9%{
+        border-right: .15em solid white;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes typewriter2{
+    0%{
+        width: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    99.9%{
+        border-right: .15em solid white;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes typewriter3{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+
+@-webkit-keyframes typewriter3{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+
+@keyframes typewriter4{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+
+@-webkit-keyframes typewriter4{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+
+}
+
+
+@keyframes typewriter5{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        opacity: 1;
+      }
+    
+}
+
+
+@-webkit-keyframes typewriter5{
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+
+}*/
+
 
 #text{
     color: #08FDD8;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color:#08FDD8;
-    text-shadow: 1px 1px #fff, 
-    2px 2px #fff, 
-    3px 3px #fff, 
-    4px 4px #ffff, 
-    5px 5px #fff, 
-    6px 6px #fff;
-    letter-spacing: 4px;
 }
 
 #tag{
@@ -82,9 +266,44 @@
     border-radius: 3px;
     font-family: Raleway;
     font-size: 1.2em;
+    transition: .9s;
+    overflow: hidden;
     
 }
+.btn:focus{
+    outline: none;
+}
+.btn:before{
+    content: "";
+    /*display: block;*/
+    opacity: .3;
+    filter: blur(60px);
+    transform: translateX(-200px) skewX(-15deg);
+}
+.btn:after{
+    content: '';
+    /*display: block;*/
+    opacity: 0;
+    filter: blur(60px);
+    transform: translate(-150px) scaleX(-15deg);
+}
+.btn:hover{
+    background: #08FDD8;
+    color: inherit;
+    cursor: pointer;
+}
+.btn:hover:before{
+    transform: translateX(300px) skewX(-40deg);
+    opacity: .6;
+    transition: .7s;
+}
+.btn:hover:after{
+    transform: translateX(300px) skewX(-40deg);
+    opacity: 1;
+    transition: .7s;
+}
 .btn2{
+    
     border: 1px solid #08FDD8;
     background: transparent;
     padding: 14px 28px;
@@ -93,7 +312,42 @@
     font-family: Raleway;
     margin-left: 80px;
     border-radius: 3px;
-    font-size: 1.2em;  
+    font-size: 1.2em; 
+    transition: .9s;
+    overflow: hidden; 
+}
+
+.btn2:focus{
+    outline: none;
+}
+.btn2:before{
+    content: "";
+    /*display: block;*/
+    opacity: .3;
+    filter: blur(60px);
+    transform: translateX(-200px) skewX(-15deg);
+}
+.btn2:after{
+    content: '';
+    /*display: block;*/
+    opacity: 0;
+    filter: blur(60px);
+    transform: translate(-150px) scaleX(-15deg);
+}
+.btn2:hover{
+    background: #08FDD8;
+    color: inherit;
+    cursor: pointer;
+}
+.btn2:hover:before{
+    transform: translateX(300px) skewX(-40deg);
+    opacity: .6;
+    transition: .7s;
+}
+.btn2:hover:after{
+    transform: translateX(300px) skewX(-40deg);
+    opacity: 1;
+    transition: .7s;
 }
 
 .btn-class{
@@ -150,6 +404,7 @@ svg{
     height: 500px;
     display: block;
     margin: auto;
+    margin-top: 100px;
 }
 
 svg #browser-logo{
