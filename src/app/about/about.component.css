@@ -1,64 +1,177 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-
-.wrapCube{
-    top: 50%;
-    left: 70%;
+/*
+.cube div{
     width: 350px;
     height: 250px;
     position: absolute;
     box-shadow: 11px 11px 51px -7px #000;
-    transform: translate(-50%, -50%);  
     text-align: center;
-}
-
-.cube, .cube div{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out;
-}
-
-.cube div span{
+    border: 10px solid #08FDD8;
+    font-size: 30px;
     font-family: Montserrat Alternates;
-    display: block;
 }
+
+.cube{
+    animation: cubeSpin 20s ease-in-out infinite;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+    margin-top: 200px;
+}
+
 
 .cube-front{
-    background-size: 100%;
-    border: 10px solid #08FDD8;
-
+    background: #4B4B4B;
+    -webkit-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
 }
 
-.cube-bottom{
-    background-size: 100%;
-    transform: translate(0, -100%) rotateX(90deg);
-    transform-origin: bottom;
-    border: 10px solid #08FDD8;
+.firstSide{
+    -webkit-transform: rotateY(90deg) translateZ(60px); 
+    -ms-transform: rotateY(90deg) translateZ(60px); 
+    transform: rotateY(90deg) translateZ(60px);
+}
+
+.cube-top{
+    background: #4B4B4B;
+    transform: rotateY(0deg) rotateX(90deg) translateZ(60px); 
 
 }
 
 .cube-back{
-    background-size: 100%;
-    transform: translate(0, -100%) rotateX(90deg);
-    transform-origin: bottom;
-    border: 10px solid #08FDD8;
+    background: #4B4B4B;
+    transform: rotateY(180deg) rotateZ(-180deg) translateZ(60px);
 
+}
+
+.secondSize{
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+
+.cube-bottom{
+    background: #4B4B4B;
+    transform: rotateX(-90deg) translateZ(60px);   
+}
+
+@-webkit-keyframes cubeSpin{
+    25%{
+        -webkit-transform: rotateX(0deg);
+    }
+    25%{
+        -webkit-transform: rotateX(-90deg);
+    }
+    50%{
+        -webkit-transform: rotateX(-180deg);
+    }
+    75%{
+        -webkit-transform: rotateX(-270deg);
+    }
+    100%{
+        -webkit-transform: rotateX(-360deg);
+    }
+}
+*/
+
+.cube-wrapper{
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+
+.cube{
+    margin: auto;
+    transform-style: preserve-3d;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: 250px;
+}
+
+.cube div{
+    position: absolute;
+    padding: 10px;
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.95;
+    background: #4B4B4B;
+    border: 10px solid #08FDD8;
+    color: #fff;
+    font-family: Montserrat Alternates;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+    font-size: 30px;
+}
+
+.cube div span{
+    margin-top: 100px;
+}
+
+.cube-front{
+    transform: translateZ(100px);
+}
+
+.cube-back{
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.firstSide{
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right; 
+}
+
+.secondSide{
+    transform-origin: center left;
+    transform: rotateY(270deg) translateX(-100px);
 }
 
 .cube-top{
-    background-size: 100%;
-    transform: translate(0, -100%) rotateX(90deg);
-    transform-origin: bottom;
-    border: 10px solid #08FDD8;
-
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
 }
 
-.wrapCube:hover .cube{
-    transform: translate(0,50%) rotateX(-90deg)
+.cube-bottom{
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+}
+
+@keyframes rotateCube{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube-wrapper:hover .cube-front{
+    transform: translateZ(200px);
+}
+.cube-wrapper:hover .cube-back{
+    transform: translateZ(-200px) rotateY(180deg);
+}
+
+.cube-wrapper:hover .firstSide{
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.cube-wrapper:hover .secondSide{
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.cube-wrapper:hover .cube-top{
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.cube-wrapper:hover .cube-bottom{
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+.cube{
+    animation: rotateCube 15s infinite linear;
 }
 
 h1{
@@ -78,4 +191,13 @@ h1 #first{
 h1 #meComp{
     font-family: Montserrat Alternates;
     color: #08FDD8;
+}
+
+p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    font-family: Raleway;
+    font-weight: 100;
+    margin-top: 20px;
 }
