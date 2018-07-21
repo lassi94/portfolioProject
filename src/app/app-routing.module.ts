@@ -14,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'skills', component: SkillsComponent
+  },
+  {
+    path:'blog', component: BlogComponent
   }
 ];
 

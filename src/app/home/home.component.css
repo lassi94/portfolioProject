@@ -358,10 +358,12 @@
     margin-top: 67px;
 }
 
-
 .left-content{
     grid-area: left;
-    position:relative;
+    height: 100%;
+    width: 100%;
+    
+    
 }
 .right-content{
     grid-area: right;
@@ -369,6 +371,7 @@
     grid-template-columns: 100%;
     height: 100%;
     width: 100%;
+    z-index: 10;
 }
 img{
     width: 500px;
@@ -376,7 +379,8 @@ img{
     display: block;
     margin: auto;
     margin-top: 100px;
-    z-index: 10;
+    
+    
 }
 
 svg #browser-logo{
@@ -397,4 +401,22 @@ svg #browser-logo{
     }
 }
 
+.st0{fill:url(#SVGID_1_);}
+.st1{fill:none;stroke:#4C4B4C;stroke-width:0.5148;stroke-miterlimit:10;}
+.st2{fill:#6FC8BD;stroke:#FFFFFF;stroke-width:0.5148;stroke-miterlimit:10;}
+.st3{fill:#4C4B4C;stroke:#FFFFFF;stroke-width:0.5148;stroke-miterlimit:10;}
+.st4{fill:#FFFFFF;}
+.st5{font-family:'MontserratAlternates-Light';}
+.st6{font-size:16.4726px;}
+.st7{opacity:0.7;}
+.st8{fill:url(#SVGID_2_);}
+.st9{fill:url(#SVGID_3_);stroke:url(#SVGID_4_);stroke-width:0.5148;stroke-miterlimit:10;}
+.st10{fill:url(#SVGID_5_);}
+.st11{opacity:0.9;}
+.st12{opacity:0.8;}
+.st13{opacity:0.95;fill:#6FC8BD;}
+.st14{opacity:0.6;}
+.st15{fill:#6FC8BD;stroke:url(#SVGID_6_);stroke-width:0.5148;stroke-miterlimit:10;}
+.st16{fill:url(#SVGID_7_);stroke:url(#SVGID_8_);stroke-width:0.5148;stroke-miterlimit:10;}
+.st17{fill:url(#SVGID_9_);stroke:url(#SVGID_10_);stroke-width:0.5148;stroke-miterlimit:10;}
 
