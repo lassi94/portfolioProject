@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+h1{
+    font-family: Raleway;
+    color: #fff;
+    font-weight: 900;
+    -webkit-text-stroke-width: 3px;
+    margin-top: 200px;
+    margin-left: 5px;
+    letter-spacing: 4px;
+}
+
+h1 span{
+    font-family: Montserrat Alternates;
+    color: #08FDD8;
+}
+
+p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    font-family: Raleway;
+    font-weight: 100;
+    margin-top: 20px;
+}
