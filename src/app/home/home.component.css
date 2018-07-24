@@ -16,7 +16,6 @@
     letter-spacing: 4px;
     margin-left: 5px;
     
-    
 }
 
 .title #first:hover{
@@ -263,6 +262,7 @@
     float: left;
     text-align: left;
     position: relative;
+    margin-top: 7px;
 }
 
 #tag{
@@ -441,10 +441,10 @@ svg #browser-logo{
     text-align: left;
     margin-left: -3px;
     -webkit-animation-name: changeName;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 7s;
     -webkit-animation-iteration-count: infinite;
     animation-name: changeName;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 }
 
@@ -496,16 +496,16 @@ svg #browser-logo{
 
 @-webkit-keyframes changeName{
     0%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
     33%{
-        transform: translate3d(0,-28%, 0);
+        transform: translate3d(0,-4%, 0);
     }
     66%{
-        transform: translate3d(0,-61%, 0)
+        transform: translate3d(0,-36%, 0)
     }
     100%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
 }
 
@@ -522,16 +522,16 @@ svg #browser-logo{
 }
 @-o-keyframes changeName{
     0%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
     33%{
-        transform: translate3d(0,-28%, 0);
+        transform: translate3d(0,-4%, 0);
     }
     66%{
-        transform: translate3d(0,-61%, 0)
+        transform: translate3d(0,-36%, 0)
     }
     100%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
 }
 
@@ -549,16 +549,16 @@ svg #browser-logo{
 
 @-moz-keyframes changeName{
     0%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
     33%{
-        transform: translate3d(0,-28%, 0);
+        transform: translate3d(0,-4%, 0);
     }
     66%{
-        transform: translate3d(0,-61%, 0)
+        transform: translate3d(0,-36%, 0)
     }
     100%{
-        transform: translate3d(0,-28%,0);
+        transform: translate3d(0,-4%,0);
     }
 }
 
@@ -585,7 +585,7 @@ svg #browser-logo{
         transform: translate3d(0,-4%, 0);
     }
     66%{
-        transform: translate3d(0,-36%, 0)
+        transform: translate3d(0,-37%, 0)
     }
     100%{
         transform: translate3d(0,-4%,0);

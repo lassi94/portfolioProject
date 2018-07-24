@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
-
+  percent: any;
+  options: any;
+ 
+  constructor() {
+      this.percent = 80;
+      this.options = {
+        size: 50,
+        rotate: 0
+      };
+  }
   ngOnInit() {
   }
 

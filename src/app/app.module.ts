@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { MatSidenavModule, MatButtonModule, MatIconModule, MatIconRegistry } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LottieAnimationViewModule } from 'ng-lottie';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatButtonModule, 
-    MatIconModule
+    MatIconModule,
+    LottieAnimationViewModule.forRoot()
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
