@@ -16,6 +16,8 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { NgxEasypiechartModule } from 'ngx-easypiechart'; 
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     AboutComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatButtonModule, 
     MatIconModule,
-    LottieAnimationViewModule.forRoot()
+    LottieAnimationViewModule.forRoot(),
+    NgxEasypiechartModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
