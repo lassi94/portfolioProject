@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-skills',
@@ -7,17 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  percent: any;
-  options: any;
- 
+  chart = [];
+
   constructor() {
-      this.percent = 80;
-      this.options = {
-        size: 50,
-        rotate: 0
-      };
+     
   }
   ngOnInit() {
+    this.chart = new Chart('canvas', {
+      type: 'doughnut',
+      data: {
+        labels: 'HTML5' 
+      }
+    })
+
+
   }
 
 }

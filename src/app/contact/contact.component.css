@@ -148,6 +148,7 @@ button{
     color: #08FDD8;
     font-family: Raleway;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 input:focus{

@@ -27,6 +27,7 @@
     "angular-font-awesome": "^3.1.2",
     "angular-fontawesome": "^1.0.0",
     "body-parser": "^1.18.3",
+    "chart.js": "^2.7.2",
     "core-js": "^2.5.4",
     "easy-pie-chart": "~2.1.7",
     "express": "^4.16.3",
@@ -36,6 +37,7 @@
     "mongoose": "^5.2.3",
     "ng-lottie": "^0.3.1",
     "ngx-easypiechart": "^0.1.1",
+    "nodemailer": "^4.6.7",
     "npm": "^6.2.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
