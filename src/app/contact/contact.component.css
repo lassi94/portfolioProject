@@ -1,0 +1,156 @@
+
+
+.contact-main{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-main #title, .contact-main #subtitle{
+    text-align: center;
+    font-family: Raleway;
+}
+
+.contact-main #title{
+    font-size: 40px;
+    color: #08FDD8;
+    font-weight: 900;
+    -webkit-text-stroke-width: 3px;
+    letter-spacing: 4px;
+}
+
+.contact-main #title span:nth-child(1):hover{
+    color: #fff;
+    
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(2):hover{
+    color: #fff;
+  
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(3):hover{
+    color: #fff;
+    
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(4):hover{
+    color: #fff;
+    
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(5):hover{
+    color: #fff;
+    
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(6):hover{
+    color: #fff;
+   
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(7):hover{
+    color: #fff;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(8):hover{
+    color: #fff;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contact-main #title span:nth-child(9):hover{
+    color: #fff;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes change{
+    0%{
+        margin-top:0;
+    }
+    10%{
+        margin-top:-5px;
+    }  
+    40%{
+        margin-top:-7px;
+    }
+    50%{
+        margin-top:-10px;
+    }
+    70%{
+        margin-top:-7px;
+    }
+    90%{
+        margin-top:-5px;
+    }
+    100%{
+        margin-top:0; 
+    } 
+}
+
+p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #08FDD8;
+    width: 100%;
+    margin: 20px 0;
+}
+input::placeholder {
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+#message{
+    margin-top: 60px;
+}
+
+button{
+    padding: 15px 32px;
+    font-size: 20px;
+    background:transparent;
+    border:none;
+    border: 1px solid #08FDD8;
+    color: #08FDD8;
+    font-family: Raleway;
+    margin-top: 20px;
+}
+
+input:focus{
+    background: transparent;
+}
+
