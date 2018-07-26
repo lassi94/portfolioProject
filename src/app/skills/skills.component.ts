@@ -1,26 +1,48 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
+
 })
 export class SkillsComponent implements OnInit {
 
-  chart = [];
+    public lottieConfig: Object;
+    private anim: any;
+    private animationSpeed: number = 1;
 
-  constructor() {
-     
+
+    constructor() {
+      this.lottieConfig = {
+          path: '../../assets/images/data.json',
+          autoplay: true,
+          loop: true
+      };
   }
-  ngOnInit() {
-    this.chart = new Chart('canvas', {
-      type: 'doughnut',
-      data: {
-        labels: 'HTML5' 
-      }
-    })
 
+  handleAnimation(anim: any) {
+      this.anim = anim;
+  }
+
+  stop() {
+      this.anim.stop();
+  }
+
+  play() {
+      this.anim.play();
+  }
+
+  pause() {
+      this.anim.pause();
+  }
+
+  setSpeed() {
+      this.anim.setSpeed();
+  }
+
+  ngOnInit(){
 
   }
 

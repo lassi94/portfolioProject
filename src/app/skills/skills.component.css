@@ -30,3 +30,7 @@ p{
     width: 110px;
     padding: 0 10px;
 }
+
+.right-content{
+    transform: translate(0, 20%);
+}
