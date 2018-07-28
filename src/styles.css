@@ -20,5 +20,4 @@ body{
     background-size: cover;
     display: grid;
     grid-template-columns: auto;
-    z-index: 0;
 }
