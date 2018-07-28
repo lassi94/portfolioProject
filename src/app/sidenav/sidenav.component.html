@@ -6,9 +6,9 @@
             <img src="./assets/images/Group 183.svg" id="logo">
         </a>
     </div>
-<mat-sidenav-container class="container" (backdropClick)="close('backdrop')">
+<mat-sidenav-container class="container sidenavContainer">
   
-    <mat-sidenav #sidenav mode="side">
+    <mat-sidenav class="list-items-nav" #sidenav mode="push">
       <ul>
         <a routerLink="/"><li>HOME</li></a>
         <a routerLink="about"><li>ABOUT</li></a>

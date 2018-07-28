@@ -11,10 +11,14 @@
     width: 150px;
     height: 100%;
     background: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border: none;
 }
 
 mat-sidenav-content{
     overflow: hidden;
+    box-shadow: 0 0 0 0 !important;
+    border: none;
 }
 
 mat-sidenav{
@@ -29,6 +33,9 @@ mat-sidenav{
 
 mat-sidenav ul{
     text-align: center;
+    box-shadow: none;
+    border: none;
+
 }
 mat-sidenav ul li{
         float: left;
@@ -52,7 +59,7 @@ mat-sidenav ul li{
     text-align: center;
     line-height: 1em;
     -webkit-transform: rotate(0deg);
-    transition: .3s ease-out;
+    transition: 0.5s ease-out;
     display: block;
     cursor: pointer;
     position: absolute;
@@ -63,6 +70,10 @@ mat-sidenav ul li{
     margin: 220px auto auto auto;
     color: #707070;
     background: transparent;
+}
+
+#toggleButton:active{
+    opacity: 0;
 }
 
 #toggleButton:hover{
@@ -80,5 +91,16 @@ mat-sidenav ul li{
 mat-sidenav:hover{
     opacity: 1;
 }
+
+.list-items-nav{
+    box-shadow: 0 0 0 0 !important;
+    border: none
+}
+
+.sidenavContainer{
+   box-shadow: none;
+}
+
+
 
 

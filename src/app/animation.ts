@@ -13,17 +13,17 @@ export const fadeAnim = trigger('fadeAnim', [
     transition('* => *', [
         query(
             ':enter',
-            [style({ opacity: 0, width:'100%', height:'100%' })],
+            [style({ opacity: 0, width:'100%', height:'100%', position: 'fixed' })],
             { optional: true }
         ),
         query(
             ':leave',
-            [style({ opacity: 1 }), animate('0.6s ease-in-out', style({ opacity: 0, width:'100%', height:'100%' }))],
+            [style({ opacity: 1 }), animate('0.6s ease-in-out', style({ opacity: 0, position: 'fixed', width:'100%', height:'100%' }))],
             { optional: true }
         ),
         query(
             ':enter',
-            [style({ opacity: 0 }), animate('1.5s ease-in-out', style({ opacity: 1, width:'100%', height:'100%' }))],
+            [style({ opacity: 0 }), animate('1.5s ease-in-out', style({ opacity: 1, position: 'fixed', width:'100%', height:'100%' }))],
             { optional: true}
 
         )
