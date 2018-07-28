@@ -1,4 +1,8 @@
 
 <app-sidenav></app-sidenav>
-<router-outlet></router-outlet>
+
+<main [@fadeAnim]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet #o="outlet"></router-outlet>
+</main>
+
 <app-footer></app-footer>

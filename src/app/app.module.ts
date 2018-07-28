@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NgxEasypiechartModule } from 'ngx-easypiechart'; 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

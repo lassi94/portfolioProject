@@ -67,6 +67,7 @@ mat-sidenav ul li{
 
 #toggleButton:hover{
     color: #08FDD8;
+    -webkit-transform: rotate(360deg); 
 }
 
 #logo{
@@ -76,20 +77,8 @@ mat-sidenav ul li{
     
 }
 
-
-.toggle.open-slide{
-        -webkit-transform: rotate(224deg); 
-        color: #fff;
-        left: -100px;
-}
-
 mat-sidenav:hover{
     opacity: 1;
 }
 
-.push {
-    margin-left: 240px;
-    margin-right: -240px;
-    transition: .3s ease-in;
-}
 

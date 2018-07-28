@@ -9,17 +9,47 @@ import { Chart } from 'chart.js';
 })
 export class SkillsComponent implements OnInit {
 
-    public lottieConfig: Object;
-    private anim: any;
-    private animationSpeed: number = 1;
+    public lottieConfig; lottieConfig2; lottieConfig3; lottieConfig4; lottieConfig6; lottieConfig5: Object;
+    private anim; anim2; anim3; anim4; anima6; anim5: any;
+    private animationSpeed; animationSpeed2; animationSpeed3; animationSpeed4; animationSpeed6; animationSpeed5: number = 1;
 
 
     constructor() {
       this.lottieConfig = {
           path: '../../assets/images/data.json',
           autoplay: true,
-          loop: true
+          loop: false
       };
+
+      this.lottieConfig2 = {
+        path: '../../assets/images/data2.json',
+        autoplay: true,
+        loop: false
+      };
+      this.lottieConfig3 = {
+        path: '../../assets/images/data3.json',
+        autoplay: true,
+        loop: false
+      };
+
+      this.lottieConfig4 = {
+        path: '../../assets/images/data4.json',
+        autoplay: 'true',
+        loop: false
+      };
+      
+      this.lottieConfig6 = {
+        path: '../../assets/images/data5.json',
+        autoplay: 'true',
+        loop: false
+      };
+
+      this.lottieConfig5 = {
+        path: '../../assets/images/data6.json',
+        autoplay: 'true',
+        loop: false
+      };
+      
   }
 
   handleAnimation(anim: any) {
