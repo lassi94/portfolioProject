@@ -3,7 +3,6 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const post = require('../models/post');
 
-
 mongoose.Promise = global.Promise;
 
 

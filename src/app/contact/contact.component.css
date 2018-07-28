@@ -133,6 +133,7 @@ input::placeholder {
     color: #fff;
     font-size: 17px;
     letter-spacing: 4px;
+    font-family: Raleway;
 }
 
 #message{
@@ -153,5 +154,19 @@ button{
 
 input:focus{
     background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #08FDD8;
+    color: #fff;
+    font-family: Raleway;
+}
+
+@keyframes expand{
+    from{
+
+    }
+    to{
+        height: 100px;
+    }
 }
 
