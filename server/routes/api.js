@@ -3,8 +3,8 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const post = require('../models/post');
 
-mongoose.Promise = global.Promise;
 
+mongoose.Promise = global.Promise;
 
 mongoose.connect(db, { useNewUrlParser: true }, function(err){
     if(err){

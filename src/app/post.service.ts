@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators'; //transform api data to json
+import { Observable } from '../../node_modules/rxjs';
+import { Post } from './post';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
 
-  response: any;
+  constructor(private _http: HttpClient) { }
 
-  constructor(private _http: Http) { }
-
-  getPosts(){
-    return this._http.get("/api/posts")
-      .pipe(map(response => this.response = response.json()));
+  getPosts(): Observable<Post>{
+    return this._http.get<Post>("/api/posts", {responseType: 'json'});
   }
 }

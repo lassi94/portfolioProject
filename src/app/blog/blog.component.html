@@ -1,5 +1,7 @@
 
 <div class="blog-main">
+
+
   <div class="row">
     <div class="columns small-12">
       <h1 id="pageHeader">BLO<span>G</span></h1>
@@ -7,7 +9,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="columns small-12 medium-6 large-4" id="post">
+    <div class="columns small-12 medium-6 posts" id="post" *ngFor="let post of posts">
       <div class="post-container">
         <div class="backgroundImage">
           <img src="../../assets/images/buttons.jpg">
@@ -15,56 +17,20 @@
         <div class="contentContainer">
         <div class="row">
           <div class="columns small-12">
-            <h1 id="header">Post Header</h1>
+            <h1 id="header" class="post-title">{{ post.title }}</h1>
           </div>
         </div>
         <div class="row">
           <div class="columns small-12">
-            <a routerLink="/post" class="cta-btn btn">Dig deeper</a>
+            <a routerLink="/post/{{ post._id }}" class="cta-btn btn">Dig deeper</a>
           </div>
         </div>
       </div>
       </div>
     </div>
-    <div class="columns small-12 medium-6 large-4" id="post">
-        <div class="post-container">
-          <div class="backgroundImage">
-            <img src="../../assets/images/buttons.jpg">
-          </div>
-          <div class="contentContainer">
-          <div class="row">
-            <div class="columns small-12">
-              <h1 id="header">Post Header</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="columns small-12">
-              <a routerLink="/post" class="cta-btn btn">Dig deeper</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="columns small-12 medium-6 large-4" id="post">
-          <div class="post-container">
-            <div class="backgroundImage">
-              <img src="../../assets/images/buttons.jpg">
-            </div>
-            <div class="contentContainer">
-            <div class="row">
-              <div class="columns small-12">
-                <h1 id="header">Post Header</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="columns small-12">
-                <a routerLink="/post" class="cta-btn btn">Dig deeper</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+  
   </div>
+    
 </div>
 
 

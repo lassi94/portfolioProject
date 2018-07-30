@@ -128,6 +128,7 @@ input{
     border-bottom: 1px solid #08FDD8;
     width: 100%;
     margin: 20px 0;
+    box-shadow: none;
 }
 input::placeholder {
     color: #fff;
