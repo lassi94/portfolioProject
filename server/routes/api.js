@@ -3,6 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const post = require('../models/post');
 
+const db = "mongodb://lasik:lenovo870@ds137661.mlab.com:37661/portfolio";
 
 mongoose.Promise = global.Promise;
 
@@ -19,8 +20,9 @@ router.get('/posts', function(req, res){
             if(err){
                 console.log("error getting the posts");
             }else{
-                res.json();
+                res.json(posts);
                 console.log(posts);
+                
             }
         });
 });

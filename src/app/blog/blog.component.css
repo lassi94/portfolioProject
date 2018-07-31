@@ -1,5 +1,5 @@
 
-#post{
+#postColumn{
     margin-left: 0;
 }
 
@@ -31,14 +31,14 @@
 }
 
 .backgroundImage{
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /*ackground-repeat: none;*/
-    background-size: 100% 100%;
+    background-repeat: none;
+    background-size: 100% 100%;*/
 
 }
 
@@ -50,7 +50,7 @@
     height: 100%;
 }
 
-#post{
+#postColumn{
     position: relative;
     border-radius: 10px;
 }
@@ -66,8 +66,7 @@
     text-align: center;
     background-repeat: none;
     background-size: 100% 100%;
-    position: absolute;
-    border-radius: 10px;
+    
 }
 
 .btn{
@@ -154,4 +153,8 @@
     font-size: 30px;
     margin-top: 100px;
     opacity: 1;
+}
+
+#rowID{
+    margin-top: 20px;
 }

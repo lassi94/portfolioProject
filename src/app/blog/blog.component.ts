@@ -9,23 +9,16 @@ import { Post } from '../post';
 })
 export class BlogComponent implements OnInit {
 
-  posts: Post[];
+  posts = [];
 
   constructor(private postService: PostService) { }
 
   ngOnInit() {
+
     this.postService.getPosts()
-      .subscribe(
-        data => {
-          this.posts = data['posts'];
-    }
-  );
+      .subscribe(data => 
+        this.posts = data
+      ); 
   }
 
 }
-/*
-this.postService.getPosts()
-      .subscribe((data: Post[]) => {
-        this.posts = data;
-      });
-      */
