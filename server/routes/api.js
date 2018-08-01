@@ -3,6 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const post = require('../models/post');
 
+const db = "mongodb://lasik:lenovo870@ds137661.mlab.com:37661/portfolio";
 
 mongoose.Promise = global.Promise;
 

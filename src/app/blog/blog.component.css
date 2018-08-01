@@ -31,6 +31,9 @@
 }
 
 .backgroundImage{
+    z-index: 0;
+    opacity: 0.6;
+
     /*position: absolute;*/
     /*top: 0;
     left: 0;
@@ -41,6 +44,12 @@
     background-size: 100% 100%;*/
 
 }
+
+.backgroundImage img{
+    border-radius: 5px;
+}
+
+
 
 .contentContainer{
     position: absolute;
@@ -66,69 +75,104 @@
     text-align: center;
     background-repeat: none;
     background-size: 100% 100%;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: changeOpacityBack;
+    animation-duration: 1s;
     
 }
 
 .btn{
-    border: 1px solid #08FDD8;
+    border: 2px solid #08FDD8;
     border-radius: 50%;
     padding: 20px;
     color: #08FDD8;
     font-size: 20px;
     font-family: Raleway;
+    font-weight: 700;
     margin: auto;
     opacity: 1;
-    display: none;
     justify-items: center;
     align-items: center;
     z-index: 1000;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    margin-top: 35%;
+    filter: blur(0px);
 }
 
 .btn:hover{
     background: #08FDD8;
-    color: #fff;
+    color:inherit;
     font-weight: 900;
     text-decoration: none;
+    opacity: 1;
+    filter: blur(0px);
 }
 
-.backgroundImage:hover .contentContainer .btn{
-    display: inline-block;
+.post-container:hover .overlay{
     animation-name: 'showButton';
     animation-duration: 1s;
+    display: block;
 }
 
 .post-container:hover{
     animation: 'changeOpacity';
     animation-duration: 1s;
-    filter: blur(1.5px);
+    filter: blur(0px);
+    background-size: 0% 0%;
 
 }
 
+.post-container:hover .backgroundImage{
+    filter: blur(1.5px);
+    transition: blur 2s ease-in;
+}
 .post-container:hover #header{
     animation: 'changeOp';
     animation-duration: 1s;
-    opacity: 0.3;
+    opacity: 0.02;
 }
 
 @keyframes showButton{
     from{
         opacity: 0;
+        filter: blur(0px);
         
     }
     to{
         opacity: 1;
-       
+        filter: blur(0px);
+    }
+}
+
+@keyframes hideButton{
+    from{
+        opacity: 1;
+        filter: blur(0px);
+    }
+    to{
+        opacity: 0;
+        filter: blur(0px);
     }
 }
 
 @keyframes changeOpacity{
     from{
         opacity: 1;
-        filter: blur(0px);
+        
     }
     to{
         opacity: 0.5;
-        filter: blur(1.5px);
+    }
+}
+
+@keyframes changeOpacityBack{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
     }
 }
 
@@ -138,7 +182,16 @@
 
     }
     to{
-        opacity: 0.3;
+        opacity: 0.02;
+    }
+}
+
+@keyframes changeOpBack{
+    from{
+        opacity: 0.02;
+    }
+    to{
+        opacity: 1;
     }
 }
 
@@ -153,8 +206,22 @@
     font-size: 30px;
     margin-top: 100px;
     opacity: 1;
+    z-index: 1;
+    animation-name: changeOpBack;
+    animation-duration: 1s;
 }
 
-#rowID{
-    margin-top: 20px;
+
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2;
+    animation-name: hideButton;
+    animation-duration: 1s;
 }

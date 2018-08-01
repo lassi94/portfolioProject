@@ -8,11 +8,13 @@
       <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
-  
+
   <div class="row" id="rowID">
 
     <div class="columns small-12 medium-6 large-4 posts" id="postColumn" *ngFor="let post of posts">
       <div class="post-container">
+
+        <div class="row">
         <div class="backgroundImage">
           <img src="../../assets/images/buttons.jpg">
         </div>
@@ -24,11 +26,14 @@
         </div>
         <div class="row">
           <div class="columns small-12">
-            <a routerLink="/post/{{ post._id }}" class="cta-btn btn">Dig deeper</a>
+            <div class="overlay">
+              <a routerLink="/post/{{ post._id }}" class="cta-btn btn">Dig deeper</a>
+            </div>
           </div>
         </div>
       </div>
       </div>
+    </div>
     </div>
   
   </div>
@@ -37,3 +42,5 @@
 
 
 <!--<div class="columns small-12 medium-6 large-3" *ngFor="let post of posts"></div>-->
+
+ <!--*ngFor="let post of posts"-->
