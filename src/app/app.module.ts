@@ -17,7 +17,8 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-import { NgxEasypiechartModule } from 'ngx-easypiechart'; 
+import { NgxEasypiechartModule } from 'ngx-easypiechart';
+import { PostComponent } from './post/post.component'; 
 
 
 
@@ -30,7 +31,8 @@ import { NgxEasypiechartModule } from 'ngx-easypiechart';
     AboutComponent,
     SkillsComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
