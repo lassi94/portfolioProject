@@ -26,4 +26,19 @@ router.get('/posts', function(req, res){
         });
 });
 
+router.get('/post/:id', function(req, res){
+    console.log('requesting posts...');
+
+    post.findById(req.params.id)
+        .exec(function(err,post){
+            if(err){
+                console.log(err);
+            }else{
+                console.log(req.params.id);
+                res.json(post);
+                console.log(post);
+            }
+        });
+});
+
 module.exports = router;

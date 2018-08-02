@@ -24,4 +24,9 @@ export class PostService {
     return this._http.get<Post[]>("/api/posts", httpOptions)
     .pipe(map(res => this.res = res));
   }
+
+  getPostByID(id){
+    return this._http.get<Post[]>("/api/post/" + id, httpOptions)
+    .pipe(map(res => this.res = res));
+  }
 }
