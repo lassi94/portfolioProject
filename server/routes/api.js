@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const post = require('../models/post');
 
 
+
 mongoose.Promise = global.Promise;
 
 mongoose.connect(db, { useNewUrlParser: true }, function(err){

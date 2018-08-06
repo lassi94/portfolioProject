@@ -10,7 +10,7 @@ import { Post } from '../post';
 })
 export class PostComponent implements OnInit {
 
-  posts = [];
+  post = [];
 
   constructor(private _postService: PostService, private router: ActivatedRoute) { }
 
@@ -20,7 +20,7 @@ export class PostComponent implements OnInit {
       let id = params['id'];
       
       this._postService.getPostByID(id)
-        .subscribe(data => this.posts = data);
+        .subscribe(data => this.post = data);
     })
 
   }
