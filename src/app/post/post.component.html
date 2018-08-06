@@ -1,13 +1,17 @@
 
 
 <div *ngIf="post" class="body-blur">
-  <div class="row">
-    <div class="columns small-12 large-10">
-      <a routerLink="/blog" class="cta-btn btn">Back</a>
-      <h1>{{ post.title }}</h1>
-    </div>
+
+  <div class="post-body">
+      <div class="row">
+          <div class="columns small-12 large-10">
+            <a routerLink="/blog" class="cta-btn btn">Back</a>
+            <h1 class="post-title">{{ post.title }}</h1>
+          </div>
+        </div>
+        <div class="row columns">
+          <p class="post-content">{{ post.content }}</p>
+        </div>
   </div>
-  <div class="row columns">
-    <p>{{ post.content }}</p>
-  </div>
+  
 </div>
