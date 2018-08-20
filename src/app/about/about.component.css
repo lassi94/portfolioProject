@@ -88,7 +88,7 @@
     height: 200px;
     width: 200px;
     position: relative;
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .cube div{
@@ -178,7 +178,7 @@ h1{
     font-weight: 900;
     -webkit-text-stroke-width: 3px;
     letter-spacing: 4px;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 5px;
 
 }
